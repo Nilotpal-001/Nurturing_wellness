@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #134d95;
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background: #0077b6; /* Blue */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/health.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 215px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.btn {
+    background: #00b4d8; /* Apollo Green */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0096c7; /* Darker Apollo Green */
+}
+
+/* Tools Section */
+.content {
+    padding: 50px 20px;
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tool {
+    width: 45%;
+    background: #e0f7fa; /* Light Apollo Green */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*.tool h2Let's continue with the completion of the `styles.css` for making the tools more advanced and attractive. Here is the rest of the CSS content:
+
+### Continuation of `styles.css`
+```css
+ Additional styling for the tools */ 
+.tool h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tool p, .tool form, .tool div {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tool input, .tool button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tool button {
+    background: #00b4d8;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tool button:hover {
+    background: #0096c7;
+}
+
+#bmi-result, #bmi-suggestion, #calorie-result, #sleep-result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #0077b6;
+}
+
+@media (max-width: 768px) {
+    .tools {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+ 
+}

@@ -1,0 +1,71 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurturing Wellness</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .footer p {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+        }
+        .hero {
+            background: url("{% static 'images/health.jpg' %}") no-repeat center center/cover;
+            color: #fff;
+            padding: 215px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">Nurturing Wellness</div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'vitaltips' %}">Vital Tips</a></li>
+                <li><a href="{% url 'article' %}">Articles</a></li>
+                <li><a href="{% url 'recipe' %}">Recipes</a></li>
+                <li><a href="{% url 'tools' %}">Tools</a></li>
+                <li><a href="{% url 'profile' %}">profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Nurturing Wellness</h1>
+            <p>TIPS FOR A HEALTHY LIFESTYLE</p>
+            <a href="{% url 'tools' %}" class="btn">Explore Tools</a>
+        </div>
+    </section>
+    <main>
+        <section class="content">
+            <h1 class="section-title">About Us</h1>
+            <p>At Nuturing Wellness, our mission is to empower individuals to lead healthier and more fulfilling lives through accessible, accurate, and actionable health and wellness information. We believe that everyone deserves the opportunity to achieve optimal health and well-being, and we are dedicated to providing resources that support informed decision-making and positive lifestyle changes.</p>
+            <p>Core Values</p>
+                <p>1. Accuracy: We prioritize providing evidence-based information that is accurate and up-to-date.
+                2. Accessibility: Our content is designed to be easily understood and accessible to people of all backgrounds and health literacy levels.
+                3. Empowerment: We aim to empower our audience by offering practical tools, tips, and resources that promote self-care and preventive health.
+                4. Community: We foster a supportive community where individuals can share experiences, seek advice, and connect with others on similar health journeys.
+                5. Integrity: We uphold the highest standards of integrity and transparency in all our content and interactions.</p>
+        <section class="content">
+                <h1 class="section-title">Join Us</h1>  
+                <p>We are always looking for passionate individuals to join our team and help us achieve our mission. If you share our commitment to health and well-being, consider becoming a part of Nurturing Wellness and making a difference in the lives of others.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nurturing Wellness. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="{% static 'js/scripts.js' %}"></script>
+    
+</body>
+</html>

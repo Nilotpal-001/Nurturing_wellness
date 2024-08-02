@@ -1,0 +1,75 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tools</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Nurturing Wellness</div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'vitaltips' %}">Vital Tips</a></li>
+                <li><a href="{% url 'article' %}">Articles</a></li>
+                <li><a href="{% url 'recipe' %}">Recipes</a></li>
+                <li><a href="{% url 'tools' %}">Tools</a></li>
+                <li><a href="{% url 'profile' %}">profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Health & Wellness Tools</h1>
+        <div class="tools">
+            <!-- BMI Calculator -->
+            <div class="tool" id="bmi-calculator">
+                <h2>Body Mass Index(BMI) Calculator</h2>
+                <form id="bmi-form">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+                    <button type="submit">Calculate BMI</button>
+                </form>
+                <div id="bmi-result"></div>
+                <div id="bmi-suggestion"></div>
+            </div>
+
+            <!-- Pedometer -->
+            <div class="tool" id="pedometer">
+                <h2>Pedometer</h2>
+                <p>Steps Today: <span id="steps-today">0</span></p>
+                <button onclick="startPedometer()">Start</button>
+            </div>
+
+            <!-- Calorie Counter -->
+            <div class="tool" id="calorie-counter">
+                <h2>Calorie Counter</h2>
+                <form id="calorie-form">
+                    <label for="calories">Calories Consumed:</label>
+                    <input type="number" id="calories" required>
+                    <button type="submit">Add Calories</button>
+                </form>
+                <div id="calorie-result"></div>
+            </div>
+
+            <!-- Sleep Tracker -->
+            <div class="tool" id="sleep-tracker">
+                <h2>Sleep Tracker</h2>
+                <form id="sleep-form">
+                    <label for="sleep">Hours Slept:</label>
+                    <input type="number" id="sleep" required>
+                    <button type="submit">Log Sleep</button>
+                </form>
+                <div id="sleep-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
