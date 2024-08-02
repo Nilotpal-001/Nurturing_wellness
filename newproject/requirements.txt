@@ -1,0 +1,11 @@
+Django==4.2.4
+python==3.12.4
+mysqlclient==2.2.0
+python-dotenv==1.0.0
+django-compressor==4.4
+django-environ==0.10.0
+gunicorn==20.1.0
+sqlparse==0.4.3
+asigref==3.6.0
+tzdata==2024.1
+whitenoise==6.4.0
